@@ -8,7 +8,7 @@
     <header>
         <div class="header-container">
           <a href="index.html">
-            <img src="#" alt="Логотип Седона">
+            <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
           
           <nav>
@@ -21,16 +21,16 @@
           
           <div class="header-actions">
               <a href="#" class="search-icon">
-                  <img src="#" alt="Значок поиска">
+                <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
               </a>
   
               <a href="#" class="favorites-icon">
-                  <img src="#" alt="Значок избранного">
-                  <span class="favorites-count">12</span>
+                <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
+                <span class="favorites-count">12</span>
               </a>
   
               <button class="button-want">
-                  Хочу сюда!
+                Хочу сюда!
               </button>
           </div>
       </div>            
@@ -84,63 +84,96 @@
                 </select>
     
                 <div class="view-toggle">
-                    <button>Плитка</button>
-                    <button>По элементам</button>
-                    <button>Список</button>
+                    <button class="view-toggle-plate">Плитка</button>
+                    <button class="view-toggle-element">По элементам</button>
+                    <button class="view-toggle-list">Список</button>
                 </div>
             </div>
     
             <div class="hotels-list">
                 <article class="hotel-card">
-                    <img src="#" alt="Изображение Amara Resort & Spa">
+                    <img src="images/photos/hotel-1.jpg" width="300" height="212" alt="Изображение Amara Resort & Spa">
                     <h3>Amara Resort & Spa</h3>
-                    <p>Гостиница</p>
-                    <p>От 4000 ₽</p>
+                    <div class="hotel-info">
+                        <p>Гостиница</p>
+                        <p>От 4000 ₽</p>
+                    </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
                         <button>В избранное</button>
                     </div>
-                    <img src="#" alt="Картинка отеля">
-                    <p>Рейтинг: 8.5</p>
+                    <div class="hotel-rating">
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>Рейтинг: 8.5</p>
+                    </div>
                 </article>
     
                 <article class="hotel-card">
-                    <img src="#" alt="Изображение Villas at Poco Diablo">
+                    <img src="images/photos/hotel-2.jpg" width="300" height="212" alt="Изображение Villas at Poco Diablo">
                     <h3>Villas at Poco Diablo</h3>
-                    <p>Гостиница</p>
-                    <p>От 5000 ₽</p>
+                    <div class="hotel-info">
+                        <p>Гостиница</p>
+                        <p>От 5000 ₽</p>
+                    </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
                         <button>В избранное</button>
                     </div>
-                    <img src="#" alt="Картинка отеля">
-                    <p>Рейтинг: 9.2</p>
+                    <div class="hotel-rating">
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>Рейтинг: 9.2</p>
+                    </div>
                 </article>
     
                 <article class="hotel-card">
-                    <img src="#" alt="Изображение Desert Quail Inn">
+                    <img src="images/photos/hotel-3.jpg" width="300" height="212" alt="Изображение Desert Quail Inn">
                     <h3>Desert Quail Inn</h3>
-                    <p>Гостиница</p>
-                    <p>От 2500 ₽</p>
+                    <div class="hotel-info">
+                        <p>Гостиница</p>
+                        <p>От 2500 ₽</p>
+                    </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
                         <button>В избранное</button>
                     </div>
-                    <img src="#" alt="Картинка отеля">
-                    <p>Рейтинг: 6.9</p>
+                    <div class="hotel-rating">
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>Рейтинг: 6.9</p>
+                    </div>
                 </article>
     
                 <article class="hotel-card">
-                    <img src="#" alt="Изображение GreenTree Inn">
+                    <img src="images/photos/hotel-4.jpg" width="300" height="212" alt="Изображение GreenTree Inn">
                     <h3>GreenTree Inn</h3>
-                    <p>Гостиница</p>
-                    <p>От 1500 ₽</p>
+                    <div class="hotel-info">
+                        <p>Гостиница</p>
+                        <p>От 1500 ₽</p>
+                    </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
                         <button>В избранное</button>
                     </div>
-                    <img src="#" alt="Картинка отеля">
-                    <p>Рейтинг: 5.0</p>
+                    <div class="hotel-rating">
+                        <div class="rating">
+                            <div class="star"></div>
+                            <div class="star"></div>
+                        </div>
+                        <p>Рейтинг: 5.0</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -164,24 +197,22 @@
                 <input type="email" name="email" placeholder="Ваш e-mail">
                 <button type="submit">Подписаться</button>
             </form>
-        
-            <img src="#" alt="Картинка для рассылки">
-          </section>
+        </section>
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="social-media">
-                <a href="#"><img src="#" alt="VK"></a>
-                <a href="#"><img src="#" alt="Telegram"></a>
-                <a href="#"><img src="#" alt="YouTube"></a>
+                <a href="#" class="social-icon vk" aria-label="VK"></a>
+                <a href="#" class="social-icon telegram" aria-label="Telegram"></a>
+                <a href="#" class="social-icon youtube" aria-label="YouTube"></a>
             </div>
       
             <div class="contact-info">
                 <a href="tel:+78128121212">+7 (812) 812-12-12</a>
             </div>
             
-            <img src="#" alt="Логотип htmlacademy">
+            <img src="images/svg/html-academy-logo.svg" width="115" height="33" alt="Логотип htmlacademy">
         </div>
     </footer>
   </body>
