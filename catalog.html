@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Страница Каталога</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header>
@@ -12,27 +13,27 @@
           </a>
           
           <nav>
-              <ul>
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="#">О Седоне</a></li>
-                  <li><a href="catalog.html">Гостиницы</a></li>
-              </ul>
+            <ul class="navigation-list">
+                <li><a href="index.html"><h4>Главная</h4></a></li>
+                <li><a href="#"><h4>О Седоне</h4></a></li>
+                <li><a href="catalog.html"><h4>Гостиницы</h4></a></li>
+            </ul>
           </nav>
           
-          <div class="header-actions">
-              <a href="#" class="search-icon">
+         <div class="header-actions">
+            <a href="#" class="search-icon">
                 <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
-              </a>
-  
-              <a href="#" class="favorites-icon">
+            </a>
+
+            <a href="#" class="favorites-icon">
                 <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
                 <span class="favorites-count">12</span>
-              </a>
-  
-              <button class="button-want">
+            </a>
+
+            <a class="interested-link text-btn-small" href="catalog.html">
                 Хочу сюда!
-              </button>
-          </div>
+            </a>
+         </div>
       </div>            
     </header>
     <main>
@@ -40,7 +41,7 @@
             <header>
                 <h1>Гостиницы Седоны</h1>
                 <nav>
-                    <ul>
+                    <ul class="filters-navigation">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="#">Гостиницы</a></li>
                     </ul>
@@ -49,21 +50,21 @@
             <div class="filters-container">
                 <form action="https://echo.htmlacademy.ru" method="get">
                     <fieldset>
-                        <legend>Инфраструктура:</legend>
+                        <legend><h4>Инфраструктура:</h4></legend>
                         <label><input type="checkbox" name="amenities" value="pool">Бассейн</label>
                         <label><input type="checkbox" name="amenities" value="parking">Парковка</label>
                         <label><input type="checkbox" name="amenities" value="wifi">Wi-Fi</label>
                     </fieldset>
                 
                     <fieldset>
-                        <legend>Тип Жилья:</legend>
+                        <legend><h4>Тип Жилья:</h4></legend>
                         <label><input type="radio" name="type" value="hotel" checked> Гостиница</label>
                         <label><input type="radio" name="type" value="motel"> Мотель</label>
                         <label><input type="radio" name="type" value="apartment"> Апартаменты</label>
                     </fieldset>
                 
                     <fieldset>
-                        <legend>Стоимость, ₽:</legend>
+                        <legend><h4>Стоимость, ₽:</h4></legend>
                         <input type="number" name="price_min" min="0" max="9000" value="0"> – 
                         <input type="number" name="price_max" min="0" max="9000" value="9000">
                     </fieldset>
@@ -93,10 +94,10 @@
             <div class="hotels-list">
                 <article class="hotel-card">
                     <img src="images/photos/hotel-1.jpg" width="300" height="212" alt="Изображение Amara Resort & Spa">
-                    <h3>Amara Resort & Spa</h3>
+                    <h3 class="noncase">Amara Resort & Spa</h3>
                     <div class="hotel-info">
-                        <p>Гостиница</p>
-                        <p>От 4000 ₽</p>
+                        <p class="text-blocks">Гостиница</p>
+                        <p class="text-blocks">От 4000 ₽</p>
                     </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
@@ -115,10 +116,10 @@
     
                 <article class="hotel-card">
                     <img src="images/photos/hotel-2.jpg" width="300" height="212" alt="Изображение Villas at Poco Diablo">
-                    <h3>Villas at Poco Diablo</h3>
+                    <h3 class="noncase">Villas at Poco Diablo</h3>
                     <div class="hotel-info">
-                        <p>Гостиница</p>
-                        <p>От 5000 ₽</p>
+                        <p class="text-blocks">Гостиница</p>
+                        <p class="text-blocks">От 5000 ₽</p>
                     </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
@@ -137,10 +138,10 @@
     
                 <article class="hotel-card">
                     <img src="images/photos/hotel-3.jpg" width="300" height="212" alt="Изображение Desert Quail Inn">
-                    <h3>Desert Quail Inn</h3>
+                    <h3 class="noncase">Desert Quail Inn</h3>
                     <div class="hotel-info">
-                        <p>Гостиница</p>
-                        <p>От 2500 ₽</p>
+                        <p class="text-blocks">Гостиница</p>
+                        <p class="text-blocks">От 2500 ₽</p>
                     </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
@@ -158,10 +159,10 @@
     
                 <article class="hotel-card">
                     <img src="images/photos/hotel-4.jpg" width="300" height="212" alt="Изображение GreenTree Inn">
-                    <h3>GreenTree Inn</h3>
+                    <h3 class="noncase">GreenTree Inn</h3>
                     <div class="hotel-info">
-                        <p>Гостиница</p>
-                        <p>От 1500 ₽</p>
+                        <p class="text-blocks">Гостиница</p>
+                        <p class="text-blocks">От 1500 ₽</p>
                     </div>
                     <div class="hotel-actions">
                         <a href="#">Подробнее</a>
@@ -209,7 +210,7 @@
             </div>
       
             <div class="contact-info">
-                <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <a class="text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </div>
             
             <img src="images/svg/html-academy-logo.svg" width="115" height="33" alt="Логотип htmlacademy">
