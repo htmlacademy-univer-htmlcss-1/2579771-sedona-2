@@ -27,6 +27,7 @@
     font-style: normal;
 }
 
+/* Общие стили по макету */
 body {
     font-family: "PT Sans", sans-serif;
 }
@@ -81,7 +82,6 @@ h4 {
     line-height: 21px;
 }
 
-
 .text-small {
     font-size: 16px;
     line-height: 21px;
@@ -94,11 +94,13 @@ h4 {
 }
 
 .text-btn-big {
+    font-weight: bold;
     font-size: 20px;
     line-height: 36px;
 }
 
 .text-btn-small {
+    font-weight: bold;
     font-size: 16px;
     line-height: 20px;
 }
@@ -108,6 +110,8 @@ h4 {
     line-height: 20px;
     font-weight: normal;
 }
+
+/* Стили компонент страниц */
 
 .navigation-list a {
     text-decoration: none;
@@ -198,6 +202,17 @@ fieldset {
 .hotel-card p {
     color: var(--color-secondary);
 }
+
+.hotel-card a {
+    color: var(--color-main);
+    text-decoration: none;
+} 
+
+.pagination a {
+    text-decoration: none;
+    color: var(--color-main);
+}
+
 
 .social-icon {
     display: inline-block;
