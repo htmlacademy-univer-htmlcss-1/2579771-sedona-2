@@ -1,0 +1,246 @@
+:root {
+    /* Цвета текста */
+    --color-main: #000000;       
+    --color-secondary: #333333;   
+    --color-on-background: #FFF;
+    --color-error: #FF5757;    
+    
+    /* Цвета кнопок */
+    --btn-main: #756157;
+    --btn-second: #82B3D3;
+    --btn-selected: #7DB54F;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-400.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/ptsans-700.woff2') format('woff2');
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Общие стили по макету */
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3.uppercase {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3.nonecase {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.text-phone {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.text-basic {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.text-blocks {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.text-small {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.text-bold {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.text-btn-big {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.text-btn-small {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text-btn-normal {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+/* Стили компонент страниц */
+
+.navigation-list a {
+    text-decoration: none;
+    color: var(--color-main); 
+}
+
+.header-actions a {
+    text-decoration: none;
+}
+
+.advantages-text h2 {
+    color: var(--color-main)
+}
+
+.advantages-text p {
+    color: var(--color-secondary)
+}
+
+.advantages-list h3 {
+    color: var(--color-main)
+}
+
+.advantages-list p {
+    color: var(--color-secondary)
+}
+
+.features-text h2 {
+    color: var(--color-main)
+}
+
+.features-list h3 {
+    color: var(--color-main)
+}
+
+.features p {
+    color: var(--color-secondary)
+}
+
+.interested h2 {
+    color: var(--color-main)
+}
+
+.interested p {
+    color: var(--color-secondary)
+}
+
+.interested a {
+    text-decoration: none;
+}
+
+.interested-link {
+    color: white; 
+    background-color: var(--btn-main);
+}
+
+.subscription-with-image {
+    color: var(--color-on-background);
+    background-image: url('../images/photos/subscribe-background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+.subscription h2 {
+    color: var(--color-main);
+} 
+
+.subscription p {
+    color: var(--color-secondary);
+} 
+
+.filters {
+        color: var(--color-on-background);
+        background-image: url('../images/photos/hotels-backgorund.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+}
+
+fieldset {
+    border: none;   
+}
+
+.filters-navigation a {
+    text-decoration: none;
+    color: var(--color-on-background);
+}
+
+.hotel-card p {
+    color: var(--color-secondary);
+}
+
+.hotel-card a {
+    color: var(--color-main);
+    text-decoration: none;
+} 
+
+.pagination a {
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+
+.social-icon.vk {
+    background-image: url('../images/svg/social-vk.svg'); 
+}
+
+.social-icon.telegram {
+    background-image: url('../images/svg/social-telegram.svg');
+}
+
+.social-icon.youtube {
+    background-image: url('../images/svg/social-youtube.svg'); 
+}
+
+.contact-info a {
+    text-decoration: none;    
+    color: var(--color-main);
+}
+
+.visually-hidden {
+    display: none;
+}

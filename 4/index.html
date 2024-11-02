@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-univer-htmlcss-1.github.io/2579771-sedona-2/4/">
+</head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="index.html">
+          <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
+        
+        <nav>
+            <ul class="navigation-list">
+                <li><a href="index.html"><h4>Главная</h4></a></li>
+                <li><a href="#"><h4>О Седоне</h4></a></li>
+                <li><a href="catalog.html"><h4>Гостиницы</h4></a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <a href="#" class="search-icon">
+                <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
+            </a>
+
+            <a href="#" class="favorites-icon">
+                <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
+                <span class="favorites-count">12</span>
+            </a>
+
+            <a class="interested-link text-btn-small" href="catalog.html">
+                Хочу сюда!
+            </a>
+        </div>
+      </div>            
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+        <div class="welcome-container">
+          <div class="welcome-image">
+            <img src="images/svg/welcome-words.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+            <img src="images/photos/hero-background.jpg" width="1200" height="485" alt="Картинка Седоны">
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <header class="advantages-text">
+          <h2>Седона – небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="text-basic">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </header>
+        <ul class="advantages-list">
+            <li class="advantage advantage--first">
+              <h3>Настоящий городок</h3>
+              <p class="text-blocks">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img src="images/photos/advantage-town.jpg" width="800" height="385" alt="Картинка города">
+            </li>
+
+            <li class="advantage">
+                <h3>Небольшая площадь</h3>
+                <p class="text-blocks">Все достопримечательности находятся очень близко.</p>
+            </li>
+            
+            <li class="advantage">
+                <h3>Красивая дорога</h3>
+                <p class="text-blocks">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            
+            <li class="advantage">
+                <h3>Мало туристов</h3>
+                <p class="text-blocks">Большинство едет в Гранд-Каньон и толпится там.</p>
+            </li>
+    
+            <li class="advantage advantage--last">
+                <img src="images/photos/advantage-bridge.jpg" width="800" height="385" alt="Картинка моста Дьявола">
+                <h3>Там есть мост дьявола</h3>
+                <p class="text-blocks">Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
+            </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <header class="features-text">
+          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+          <p class="text-basic">Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <div class="features-list">
+          <div class="feature">
+            <img src="images/svg/home.svg" width="75" height="72" alt="Картинка Жилье">
+            <h3>Жильё</h3>
+            <p class="text-blocks">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+          </div>
+
+          <div class="feature">
+            <img src="images/svg/food.svg" width="75" height="72" alt="Картинка Еда">
+            <h3>Еда</h3>
+            <p class="text-blocks">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+
+          <div class="feature">
+            <img src="images/svg/souvenir.svg" width="75" height="72" alt="Картинка Сувениры">
+            <h3>Сувениры</h3>
+            <p class="text-blocks">Не только китайского, но и настоящего местного производства!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interested">
+        <h2>Заинтересовались?</h2>
+        <p class="text-basic">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="interested-link text-btn-big" href="catalog.html">Поиск гостиницы в Седоне</a>
+      </section>
+
+      <section class="subscription-with-image">
+        <h2>Подпишитесь на рассылку</h2>
+        <p class="text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-media">
+          <a href="#" class="social-icon vk" aria-label="VK"></a>
+          <a href="#" class="social-icon telegram" aria-label="Telegram"></a>
+          <a href="#" class="social-icon youtube" aria-label="YouTube"></a>
+        </div>
+    
+        <div class="contact-info">
+            <a class="text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+
+        <img src="images/svg/html-academy-logo.svg" width="115" height="33" alt="Логотип htmlacademy">
+      </div>
+    </footer>
+  </body>
+</html>
