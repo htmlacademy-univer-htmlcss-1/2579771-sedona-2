@@ -30,6 +30,13 @@
 /* Общие стили по макету */
 body {
     font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--color-main); 
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -72,11 +79,6 @@ h4 {
     line-height: 40px;
 }
 
-.text-basic {
-    font-size: 22px;
-    line-height: 26px;
-}
-
 .text-blocks {
     font-size: 18px;
     line-height: 21px;
@@ -112,54 +114,27 @@ h4 {
 }
 
 /* Стили компонент страниц */
-
-.navigation-list a {
-    text-decoration: none;
-    color: var(--color-main); 
-}
-
-.header-actions a {
-    text-decoration: none;
-}
-
-.advantages-text h2 {
+.hotel-card a,
+.pagination a,
+.contact-info a,
+.navigation-list a
+ {
     color: var(--color-main)
 }
 
-.advantages-text p {
+.advantages-text p,
+.advantages-list p,
+.features p,
+.interested p,
+.subscription p,
+.hotel-card p {
     color: var(--color-secondary)
 }
 
-.advantages-list h3 {
-    color: var(--color-main)
-}
-
-.advantages-list p {
-    color: var(--color-secondary)
-}
-
-.features-text h2 {
-    color: var(--color-main)
-}
-
-.features-list h3 {
-    color: var(--color-main)
-}
-
-.features p {
-    color: var(--color-secondary)
-}
-
-.interested h2 {
-    color: var(--color-main)
-}
-
-.interested p {
-    color: var(--color-secondary)
-}
-
-.interested a {
-    text-decoration: none;
+.navigation-list a span {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
 }
 
 .interested-link {
@@ -174,45 +149,26 @@ h4 {
     background-position: center; 
 }
 
-
-.subscription h2 {
-    color: var(--color-main);
-} 
-
-.subscription p {
-    color: var(--color-secondary);
-} 
-
 .filters {
-        color: var(--color-on-background);
-        background-image: url('../images/photos/hotels-backgorund.jpg'); 
-        background-size: cover; 
-        background-position: center; 
+    color: var(--color-on-background);
+    background-image: url('../images/photos/hotels-backgorund.jpg'); 
+    background-size: cover; 
+    background-position: center; 
 }
 
 fieldset {
     border: none;   
 }
 
-.filters-navigation a {
-    text-decoration: none;
+fieldset legend {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.filters-navigation a {    
     color: var(--color-on-background);
 }
-
-.hotel-card p {
-    color: var(--color-secondary);
-}
-
-.hotel-card a {
-    color: var(--color-main);
-    text-decoration: none;
-} 
-
-.pagination a {
-    text-decoration: none;
-    color: var(--color-main);
-}
-
 
 .social-icon {
     display: inline-block;
@@ -221,25 +177,13 @@ fieldset {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
-    text-decoration: none;
 }
 
-.social-icon.vk {
-    background-image: url('../images/svg/social-vk.svg'); 
-}
+.social-icon.vk { background-image: url('../images/svg/social-vk.svg'); }
 
-.social-icon.telegram {
-    background-image: url('../images/svg/social-telegram.svg');
-}
+.social-icon.telegram { background-image: url('../images/svg/social-telegram.svg'); }
 
-.social-icon.youtube {
-    background-image: url('../images/svg/social-youtube.svg'); 
-}
-
-.contact-info a {
-    text-decoration: none;    
-    color: var(--color-main);
-}
+.social-icon.youtube { background-image: url('../images/svg/social-youtube.svg'); }
 
 .visually-hidden {
     display: none;
