@@ -8,42 +8,43 @@
   <body>
     <header>
       <div class="header-container">
-        <a href="index.html">
-          <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
-        </a>
-        
-        <nav>
-          <ul class="navigation-list">
-            <li><a href="index.html"><span>Главная</span></a></li>
-            <li><a href="#"><span>О Седоне</span></a></li>
-            <li><a href="catalog.html"><span>Гостиницы</span></a></li>
-          </ul>
-        </nav>
+        <div class="header-navigation">
+          <a href="index.html">
+            <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
+          </a>
+          
+          <nav>
+            <ul class="navigation-list">
+              <li><a href="index.html"><span>Главная</span></a></li>
+              <li><a href="#"><span>О Седоне</span></a></li>
+              <li><a href="catalog.html"><span>Гостиницы</span></a></li>
+            </ul>
+          </nav>
+        </div>
         
         <div class="header-actions">
+          <div class="icons">
             <a href="#" class="search-icon">
                 <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
             </a>
-
             <a href="#" class="favorites-icon">
                 <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
                 <span class="favorites-count">12</span>
             </a>
-
-            <a class="interested-link text-btn-small" href="catalog.html">
-                Хочу сюда!
-            </a>
+          </div>
+            
+          <a class="interested-link text-btn-small" href="catalog.html">
+              Хочу сюда!
+          </a>
         </div>
       </div>            
     </header>
-
-    <main>
+    <main class="main-container">
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <div class="welcome-container">
           <div class="welcome-image">
             <img src="images/svg/welcome-words.svg" width="458" height="352" alt="Добро пожаловать в Седону">
-            <img src="images/photos/hero-background.jpg" width="1200" height="485" alt="Картинка Седоны">
           </div>
         </div>
       </section>
@@ -54,33 +55,43 @@
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </header>
         <ul class="advantages-list">
-            <li class="advantage advantage--first">
-              <h3 class="uppercase">Настоящий городок</h3>
-              <p class="text-blocks">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="images/photos/advantage-town.jpg" width="800" height="385" alt="Картинка города">
-            </li>
-
-            <li class="advantage">
-                <h3 class="uppercase">Небольшая площадь</h3>
-                <p class="text-blocks">Все достопримечательности находятся очень близко.</p>
-            </li>
-            
-            <li class="advantage">
-                <h3 class="uppercase">Красивая дорога</h3>
-                <p class="text-blocks">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            
-            <li class="advantage">
-                <h3 class="uppercase">Мало туристов</h3>
-                <p class="text-blocks">Большинство едет в Гранд-Каньон и толпится там.</p>
-            </li>
-    
-            <li class="advantage advantage--last">
-                <img src="images/photos/advantage-bridge.jpg" width="800" height="385" alt="Картинка моста Дьявола">
-                <h3 class="uppercase">Там есть мост дьявола</h3>
-                <p class="text-blocks">Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
-            </li>
-        </ul>
+          <li class="advantage advantage--first">
+              <div class="text-container">
+                  <h3 class="uppercase">Настоящий городок</h3>
+                  <p class="text-blocks">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img src="images/photos/advantage-town.jpg" alt="Картинка города">
+          </li>
+      
+          <li class="advantage">
+            <div class="text-container">
+              <h3 class="uppercase">Небольшая площадь</h3>
+              <p class="text-blocks">Все достопримечательности находятся очень близко.</p>
+            </div>
+          </li>
+      
+          <li class="advantage">
+            <div class="text-container">
+              <h3 class="uppercase">Красивая дорога</h3>
+              <p class="text-blocks">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+      
+          <li class="advantage">
+            <div class="text-container">
+              <h3 class="uppercase">Мало туристов</h3>
+              <p class="text-blocks">Большинство едет в Гранд-Каньон и толпится там.</p>
+            </div>
+          </li>
+      
+          <li class="advantage advantage--last">
+              <img src="images/photos/advantage-bridge.jpg" alt="Картинка моста Дьявола">
+              <div class="text-container">
+                  <h3 class="uppercase">Там есть мост дьявола</h3>
+                  <p class="text-blocks">Да, по нему можно пройти! Если вы осмелитесь, разумеется.</p>
+              </div>
+          </li>
+      </ul>
       </section>
 
       <section class="features">
