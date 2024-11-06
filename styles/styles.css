@@ -80,7 +80,6 @@ h2 {
     line-height: 36px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0;
 }
 
 h3.uppercase {
@@ -172,11 +171,19 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 36px;
     text-align: center;
     color: white; 
     background-color: var(--btn-main);
+}
+
+.interested-link.wish {
+    width: 160px;
+    height: 36px;
+}
+
+.interested-link.search {
+    width: 376px;
+    height: 52px;
 }
 
 .subscription-with-image {
@@ -305,6 +312,7 @@ fieldset legend {
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -324,14 +332,24 @@ fieldset legend {
     text-decoration: none;
 }
 
-.navigation-list a.active {
-    box-shadow: inset 0 -3px 0 0 #756257;
+.navigation-list a span {
+    position: relative;
+}
+
+.navigation-list a.active span::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    background-color: #756257;
 }
 
 .header-actions { 
     display: flex;
     align-items: center;
-    gap: 20px
+    gap: 20px;
 } 
 
 .welcome {
@@ -364,11 +382,21 @@ fieldset legend {
 .advantages-text {
     display: flex;
     flex-direction: column;
-    gap: 25px;
     text-align: center;
+    gap: 25px;
     padding-top: 69px;
     padding-bottom: 69px;
 }
+
+.advantages-text h2 {
+    max-width: 620px;
+    margin: 0 auto; 
+} 
+
+.advantages-text p {
+    max-width: 651px;
+    margin: 0 auto;
+} 
 
 .advantages-list {
     display: flex;
@@ -385,6 +413,7 @@ fieldset legend {
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 30px;
 }
 
 .advantage--first,
@@ -402,11 +431,32 @@ fieldset legend {
     align-items: center;
 }
 
+.text-container h3{
+    margin: 0;
+    max-width: 175px;
+}
+
+.text-container p {
+    margin: 0;
+    max-width: 230px;
+}
+
+.divider {
+    width: 60px; 
+    height: 2px; 
+    background-color: hsla(0, 0%, 0%, 0.3);
+}
+
 .advantage--first img,
 .advantage--last img {
     flex: 2; 
     width: 100%;
     height: 100%; 
+}
+
+.advantage--first .divider,
+.advantage--last .divider {
+    background-color: hsla(0, 0%, 100%, 0.3)
 }
 
 
@@ -427,6 +477,7 @@ fieldset legend {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:30px
 }
 
 .advantage:nth-child(1),
@@ -453,9 +504,22 @@ fieldset legend {
 }
 
 .features-text{
-text-align: center;
-padding-top: 64px;
-padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.features-text h2 {
+    max-width: 505px;
+    margin: 0 auto;
+}
+
+.features-text p {
+    max-width: 490px;
+    margin: 0 auto;
 }
 
 .features-list {
@@ -471,7 +535,13 @@ padding-bottom: 64px;
     justify-content: center; 
     align-items: center; 
     text-align: center;
+    gap: 30px;
     flex: 1; 
+}
+
+.feature h3,
+.feature p {
+    margin: 0;
 }
 
 .feature:nth-child(odd) {
@@ -479,13 +549,16 @@ padding-bottom: 64px;
 }
 
 .interested {
-    padding: 96px 304px;
+    padding: 96px 0;
+    width: 592px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
+    gap: 54px;
     align-items: center;
     text-align: center;
 }
+
 
 .subscription-with-image{
     padding-left: 258px;
