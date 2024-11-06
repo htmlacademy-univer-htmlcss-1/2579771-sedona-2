@@ -64,6 +64,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 h1 {
     font-size: 60px;
     line-height: 78px;
@@ -76,6 +80,7 @@ h2 {
     line-height: 36px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h3.uppercase {
@@ -163,6 +168,13 @@ h4 {
 }
 
 .interested-link {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 36px;
+    text-align: center;
     color: white; 
     background-color: var(--btn-main);
 }
@@ -287,9 +299,8 @@ fieldset legend {
     gap: 30px;
 }
 
-.navigation-list a.active {
-    padding-bottom: 14px;
-    border-bottom: 3px solid #756257;
+.navigation {
+    height: 100%; 
 }
 
 .navigation-list {
@@ -297,14 +308,29 @@ fieldset legend {
     list-style: none;
     margin: 0;
     padding: 0;
+    height: 100%; 
 }
 
 .navigation-list li {
-    padding: 20px 16px;
+    height: 100%;
+}
+
+.navigation-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    padding: 0 16px; 
+    text-decoration: none;
+}
+
+.navigation-list a.active {
+    box-shadow: inset 0 -3px 0 0 #756257;
 }
 
 .header-actions { 
     display: flex;
+    align-items: center;
     gap: 20px
 } 
 
@@ -336,6 +362,9 @@ fieldset legend {
 }
 
 .advantages-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     text-align: center;
     padding-top: 69px;
     padding-bottom: 69px;
