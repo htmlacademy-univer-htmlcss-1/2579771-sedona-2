@@ -9,6 +9,16 @@
     --btn-main: #756157;
     --btn-second: #82B3D3;
     --btn-selected: #7DB54F;
+
+    /* Цвет фона */
+    --bg-basic-3: #82B3D3;
+    --bg-second-1: hsla(204, 48%, 67%, 0.12);
+    --bg-second-2: hsla(204, 48%, 67%, 0.2);
+    --bg-hover: #68A2CA;
+    --bg-active: hsla(204, 48%, 60%, 0.3);
+    --bg-hover-brown: #756157;
+    --bg-hover-brown-active: hsla(20, 15%, 40%, 0.3);
+    
 }
 
 @font-face {
@@ -27,12 +37,27 @@
     font-style: normal;
 }
 
+html {
+    height: 100%;
+}
+
 /* Общие стили по макету */
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     color: var(--color-main); 
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 1200px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-container{
+    flex-grow: 1;
 }
 
 a {
@@ -146,7 +171,6 @@ h4 {
     color: var(--color-on-background);
     background-image: url('../images/photos/subscribe-background.jpg'); 
     background-size: cover; 
-    background-position: center; 
 }
 
 .filters {
@@ -174,17 +198,373 @@ fieldset legend {
     display: inline-block;
     width: 40px;
     height: 40px; 
+    background-color: var(--bg-basic-3);
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.social-icon.vk { background-image: url('../images/svg/social-vk.svg'); }
+.social-icon.vk {  mask-image:  url('../images/svg/social-vk.svg'); }
 
-.social-icon.telegram { background-image: url('../images/svg/social-telegram.svg'); }
+.social-icon.telegram {  mask-image: url('../images/svg/social-telegram.svg'); }
 
-.social-icon.youtube { background-image: url('../images/svg/social-youtube.svg'); }
+.social-icon.youtube {  mask-image:  url('../images/svg/social-youtube.svg'); }
+
+.social-icon:hover {
+    background-color: var(--bg-hover);
+}
+
+.social-icon:focus {
+    background-color: var(--bg-hover);
+    outline: none;
+}
+
+.social-icon:active {
+    background-color: var(--bg-active);
+}
+
+.text-phone:hover {
+    color: var(--bg-hover-brown);
+}
+
+.text-phone:focus {
+    color: var(--bg-hover-brown);
+    outline: none;
+}
+
+.text-phone:active {
+    color: var(--bg-hover-brown-active);
+}
+
+.htmlacademy-logo {
+    width: 115px;
+    height: 33px;
+    background-size: contain;
+    background-color: var(--color-main);
+    background-repeat: no-repeat;
+    background-position: center;
+    mask-image: url('../images/svg/html-academy-logo.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.htmlacademy-logo:hover {
+    background-color: var(--bg-hover-brown);
+}
+
+.htmlacademy-logo:focus {
+    background-color: var(--bg-hover-brown);
+}
+
+.htmlacademy-logo:active {
+    background-color: var(--bg-hover-brown-active);
+}
 
 .visually-hidden {
     display: none;
+}
+
+/* Верстка страниц по сетке */
+.header-container {
+    position: relative;
+    z-index: 10;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.header-navigation a img {
+    position: relative;
+}
+
+.header-navigation {
+    height: inherit;
+    display: flex;
+    gap: 30px;
+}
+
+.navigation-list a.active {
+    padding-bottom: 14px;
+    border-bottom: 3px solid #756257;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list li {
+    padding: 20px 16px;
+}
+
+.header-actions { 
+    display: flex;
+    gap: 20px
+} 
+
+.welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 485px; 
+    background-image: url('../images//photos/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.welcome-container {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container .welcome-image img:first-child {
+    height: auto;
+    display: block;
+}
+
+.advantages-text {
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom: 69px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advantage {
+    height: 385px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.advantage--first,
+.advantage--last {
+    width: 100%;
+    display: flex;
+}
+
+.advantage--first .text-container,
+.advantage--last .text-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage--first img,
+.advantage--last img {
+    flex: 2; 
+    width: 100%;
+    height: 100%; 
+}
+
+
+.advantage:nth-child(2),
+.advantage:nth-child(3),
+.advantage:nth-child(4) {
+    flex: 1 1 33.33%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage .text-container {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage:nth-child(1),
+.advantage:nth-child(5) {
+    color: white;
+    background-color: var(--bg-basic-3);
+}
+
+.advantage:nth-child(1) p,
+.advantage:nth-child(5) p {
+    color: white;
+}
+
+.advantage:nth-child(2) {
+    background-color: var(--bg-second-1);
+}
+
+.advantage:nth-child(3) {
+    background-color: var(--bg-second-2);
+}
+
+.advantage:nth-child(4) {
+    background-color: var(--bg-second-1);
+}
+
+.features-text{
+text-align: center;
+padding-top: 64px;
+padding-bottom: 64px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.feature {
+    padding: 80px 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    flex: 1; 
+}
+
+.feature:nth-child(odd) {
+    background-color: var(--bg-second-1);
+}
+
+.interested {
+    padding: 96px 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscription-with-image{
+    padding-left: 258px;
+    padding-right: 258px;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 70px;
+}
+
+.filters  {
+    padding: 35px 70px;
+} 
+
+.filters h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-filters, .right-filters {
+    display: flex;
+    gap: 70px;
+    flex-direction: row;
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;    
+}
+
+.filters-form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-sort {
+    padding: 50px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-options {
+    display: flex;
+    align-items: center;
+}
+
+.view-toggle {
+    display: flex;
+}
+
+.hotels-list {
+    padding: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+.hotel-card {
+    flex: 1 ; 
+    max-width: 340px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination ul {
+    display: flex;
+    list-style: none; 
+    padding: 35px 70px; 
+    margin: 0; 
+    gap: 10px;  
+}
+
+.subscription {
+    padding-left: 258px;
+    padding-right: 258px;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
