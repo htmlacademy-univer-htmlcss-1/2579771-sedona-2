@@ -229,6 +229,7 @@ fieldset legend {
 
 .text-phone:focus {
     color: var(--bg-hover-brown);
+    outline: none;
 }
 
 .text-phone:active {
