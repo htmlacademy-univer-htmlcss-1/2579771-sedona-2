@@ -186,12 +186,6 @@ h4 {
     height: 52px;
 }
 
-.subscription-with-image {
-    color: var(--color-on-background);
-    background-image: url('../images/photos/subscribe-background.jpg'); 
-    background-size: cover; 
-}
-
 .filters {
     color: var(--color-on-background);
     background-image: url('../images/photos/hotels-backgorund.jpg'); 
@@ -551,8 +545,8 @@ fieldset legend {
     text-align: center;
 }
 
-
-.subscription-with-image{
+.subscription {
+    max-width: 684px;
     padding-left: 258px;
     padding-right: 258px;
     padding-top: 96px;
@@ -562,6 +556,39 @@ fieldset legend {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 54px;
+}
+
+.subscription-bg-image {
+    background-image: url('../images/photos/subscribe-background.jpg'); 
+    background-size: cover; 
+}
+
+.subscription-bg-image > .subscription-text p,
+.subscription-bg-image > .subscription-text h2
+{
+    color: var(--color-on-background);
+}
+
+.subscription-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    text-align: center;
+}
+
+.subscription-text h2 {
+    text-align: center;
+    margin: 0;
+    max-width: 404px;
+}
+
+.subscription-text p {
+    text-align: center;
+    margin: 0;
+    max-width: 475px;
 }
 
 .footer-container {
@@ -572,7 +599,7 @@ fieldset legend {
 }
 
 .filters  {
-    padding: 35px 70px;
+    padding: 35px 70px 70px 70px;
 } 
 
 .filters h1 {
@@ -620,6 +647,7 @@ fieldset {
 .view-options {
     display: flex;
     align-items: center;
+    gap: 70px;
 }
 
 .view-toggle {
@@ -649,16 +677,4 @@ fieldset {
     padding: 35px 70px; 
     margin: 0; 
     gap: 10px;  
-}
-
-.subscription {
-    padding-left: 258px;
-    padding-right: 258px;
-    padding-top: 96px;
-    padding-bottom: 104px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
