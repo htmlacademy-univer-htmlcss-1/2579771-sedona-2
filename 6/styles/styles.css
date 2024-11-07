@@ -18,6 +18,9 @@
     --bg-active: hsla(204, 48%, 60%, 0.3);
     --bg-hover-brown: #756157;
     --bg-hover-brown-active: hsla(20, 15%, 40%, 0.3);
+
+    /* Формы */
+    --elements-2: hsla(0, 0%, 95%);
     
 }
 
@@ -189,6 +192,7 @@ h4 {
 .filters {
     color: var(--color-on-background);
     background-image: url('../images/photos/hotels-backgorund.jpg'); 
+    background-color: var(--bg-basic-3);
     background-size: cover; 
     background-position: center; 
 }
@@ -346,6 +350,7 @@ fieldset legend {
     align-items: center;
     height: 485px; 
     background-image: url('../images//photos/hero-background.jpg');
+    background-color: var(--bg-basic-3);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -561,6 +566,7 @@ fieldset legend {
 
 .subscription-bg-image {
     background-image: url('../images/photos/subscribe-background.jpg'); 
+    background-color: var(--bg-basic-3);
     background-size: cover; 
 }
 
@@ -638,7 +644,7 @@ fieldset {
 }
 
 .results-sort {
-    padding: 50px 70px;
+    padding: 50px 70px 40px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -674,7 +680,35 @@ fieldset {
 .pagination ul {
     display: flex;
     list-style: none; 
-    padding: 35px 70px; 
+    padding: 0 70px 60px 70px;
     margin: 0; 
-    gap: 10px;  
+    gap: 8px;  
+}
+
+.pagination a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-second);
+    color: white;
+}
+
+.pagination .current {
+    color: var(--color-main);
+    background-color: var(--elements-2);
+}
+
+.pagination .more {
+    color: var(--color-main);
+    background-color: inherit;
+}
+
+.pagination-divider {
+    margin: 40px auto;
+    height: 1px;
+    width: 1060px;
+    background-color: #E6E6E6;
 }
