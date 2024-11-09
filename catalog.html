@@ -8,35 +8,34 @@
   <body>
     <header>
         <div class="header-container">
-          <div class="header-navigation">
-            <a href="index.html">
-              <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
-            </a>
-            
-            <nav>
-              <ul class="navigation-list">
-                <li><a href="index.html"><span>Главная</span></a></li>
-                <li><a href="#"><span>О Седоне</span></a></li>
-                <li><a href="catalog.html" class="active"><span>Гостиницы</span></a></li>
-              </ul>
-            </nav>
-          </div>
-          
-          <div class="header-actions">
-            <div class="icons">
-              <a href="#" class="search-icon">
-                  <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
-              </a>
-              <a href="#" class="favorites-icon">
-                  <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
-                  <span class="favorites-count">12</span>
-              </a>
+            <div class="header-navigation">
+                <a class="logo-link" href="index.html">
+                    <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
+                </a>
+                <nav>
+                    <ul class="navigation-list">
+                    <li><a href="index.html"><span>Главная</span></a></li>
+                    <li><a href="#"><span>О Седоне</span></a></li>
+                    <li><a href="catalog.html" class="active"><span>Гостиницы</span></a></li>
+                    </ul>
+                </nav>
             </div>
-              
-            <a class="interested-link text-btn-small" href="catalog.html">
-                Хочу сюда!
-            </a>
-          </div>
+            
+            <div class="header-actions">
+                <div class="icons">
+                <a href="#" class="search-icon">
+                    <img src="images/svg/search.svg" width="20" height="20" alt="Значок поиска">
+                </a>
+                <a href="#" class="favorites-icon">
+                    <img src="images/svg/heart.svg" width="20" height="20" alt="Значок избранного">
+                    <span class="favorites-count">12</span>
+                </a>
+                </div>
+                
+                <a class="interested-link wish text-btn-small" href="catalog.html">
+                    ХОЧУ СЮДА!
+                </a>
+            </div>
         </div>            
     </header>
     <main class="main-container">
@@ -188,26 +187,29 @@
         </section>
 
         <section class="pagination">
+            <div class="pagination-divider"></div> 
             <h2 class="visually-hidden" >Найденные страницы</h2>
             <ul>
-                <li><a class="text-btn-big">1</a></li>
+                <li><a class="text-btn-big current">1</a></li>
                 <li><a class="text-btn-big" href="#">2</a></li>
                 <li><a class="text-btn-big" href="#">3</a></li>
                 <li><a class="text-btn-big" href="#">4</a></li>
-                <li><a class="text-btn-big" href="#">...</a></li>
+                <li><a class="text-btn-big more" href="#">...</a></li>
                 <li><a class="text-btn-big" href="#">10</a></li>
             </ul>
         </section>
 
         <section class="subscription">
-            <h2>Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <div class="subscription-text">
+               <h2>Подпишитесь на рассылку</h2>
+              <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
             
             <form action="https://echo.htmlacademy.ru" method="post">
                 <input type="email" name="email" placeholder="Ваш e-mail" required>
                 <button type="submit">Подписаться</button>
             </form>
-        </section>
+          </section>
     </main>
 
     <footer>
