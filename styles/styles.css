@@ -9,6 +9,11 @@
     --btn-main: #756157;
     --btn-second: #82B3D3;
     --btn-selected: #7DB54F;
+    --btn-disabled: #E5E5E5;
+
+    --btn-hover-brown: #615048; 
+    --btn-hover-blue: #68A2CA;
+    --btn-hover-green: #6C9E42; 
 
     /* Цвет фона */
     --bg-basic-3: #82B3D3;
@@ -21,6 +26,10 @@
 
     /* Формы */
     --elements-2: #f2f2f2;
+
+    /* Текст */
+    --icons-text: #7DB54F;
+    --small-text: hsla(0, 0%, 100%, 0.3);
     
 }
 
@@ -174,6 +183,7 @@ h4 {
 }
 
 .interested-link {
+    text-transform: uppercase;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -181,6 +191,24 @@ h4 {
     text-align: center;
     color: white; 
     background-color: var(--btn-main);
+}
+
+.interested-link:hover {
+    background-color: var(--btn-hover-brown);
+}
+
+.interested-link:focus {
+    outline: none;
+    background-color: var(--btn-hover-brown);
+}
+
+.interested-link:active {
+    color: var(--small-text);
+}
+
+.interested-link:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
 }
 
 .interested-link.wish {
@@ -302,7 +330,6 @@ fieldset legend {
 }
 
 .header-navigation {
-    height: inherit;
     display: flex;
     gap: 30px;
 }
@@ -341,11 +368,49 @@ fieldset legend {
     background-color: #756257;
 }
 
-.header-actions { 
+.header-actions {
+    height: 64px;
     display: flex;
     align-items: center;
     gap: 20px;
 } 
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-icon img {
+    display: block;
+}
+
+.favorites-icon img {
+    display: block;
+}
+
+.icons a {
+    padding: 22px 12px;
+}
+
+.favorites-icon {
+    position: relative;
+}
+
+.favorites-count {
+    position: absolute;
+    top: 11px; 
+    left: 20px; 
+    background-color: var(--icons-text);
+    color: #fff; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px; 
+    font-weight: normal; 
+}
 
 .welcome {
     position: relative;
@@ -728,7 +793,26 @@ fieldset {
     background-color: var(--btn-main);
 }
 
+.info:hover {
+    background-color: var(--btn-hover-brown);
+}
+
+.info:focus {
+    outline: none;
+    background-color: var(--btn-hover-brown);
+}
+
+.info:active {
+    color: var(--small-text);
+}
+
+.info:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
 .hotel-actions .favorite {
+    cursor: pointer;
     text-transform: uppercase;
     padding: 8px 0;
     border: none;
@@ -742,8 +826,44 @@ fieldset {
     background-color: var(--btn-second);
 }
 
+.favorite:hover {
+    background-color: var(--btn-hover-blue);
+}
+
+.favorite:focus {
+    outline: none;
+    background-color: var(--btn-hover-blue);
+}
+
+.favorite:active {
+    color: var(--small-text);
+}
+
+.favorite:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
 .hotel-actions .selected {
     background-color: var(--btn-selected);
+}
+
+.hotel-actions .selected:hover {
+    background-color: var(--btn-hover-green);
+}
+
+.hotel-actions .selected:focus {
+    outline: none;
+    background-color: var(--btn-hover-green);
+}
+
+.hotel-actions .selected:active {
+    color: var(--small-text);
+}
+
+.hotel-actions .selected:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
 }
 
 .hotel-rating {
@@ -814,4 +934,22 @@ fieldset {
     height: 1px;
     width: 1060px;
     background-color: #E6E6E6;
+}
+
+.pg-link:hover {
+    background-color: var(--btn-hover-blue);
+}
+
+.pg-link:focus {
+    outline: none;
+    background-color: var(--btn-hover-blue);
+}
+
+.pg-link:active {
+    color: var(--small-text);
+}
+
+.pg-link:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
 }
