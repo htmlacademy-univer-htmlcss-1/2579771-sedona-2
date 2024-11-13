@@ -716,6 +716,7 @@ fieldset {
 }
 
 .hotel-actions .info {
+    text-transform: uppercase;
     padding: 8px 0;
     width: 100%;
     border-radius: 4px;
@@ -728,6 +729,7 @@ fieldset {
 }
 
 .hotel-actions .favorite {
+    text-transform: uppercase;
     padding: 8px 0;
     border: none;
     width: 100%;
@@ -766,6 +768,7 @@ fieldset {
 }
 
 .rating-text {
+    text-transform: uppercase;
     padding: 8px 0;
     width: 100%;
     border-radius: 4px;
