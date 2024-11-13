@@ -20,7 +20,7 @@
     --bg-hover-brown-active: hsla(20, 15%, 40%, 0.3);
 
     /* Формы */
-    --elements-2: hsla(0, 0%, 95%);
+    --elements-2: #f2f2f2;
     
 }
 
@@ -69,6 +69,10 @@ a {
 
 p {
     margin: 0;
+}
+
+button {
+    font-family: inherit;
 }
 
 h1 {
@@ -662,19 +666,118 @@ fieldset {
 
 .hotels-list {
     padding: 0 70px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     justify-content: space-between;
 }
 
 .hotel-card {
-    flex: 1 ; 
-    max-width: 340px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "image image"
+        "title title"
+        "info info"
+        "actions actions"
+        "rating rating";
     border: 1px solid #E6E6E6;
     border-radius: 4px;
+    padding: 20px;
+    max-width: 340px;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+.hotel-card img {
+    grid-area: image;
+    width: 100%;
+}
+
+.hotel-card h3 {
+    grid-area: title;
+    margin: 0;
+}
+
+.hotel-info {
+    grid-area: info;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotel-actions {
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hotel-actions .info {
+    text-transform: uppercase;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    background-color: var(--btn-main);
+}
+
+.hotel-actions .favorite {
+    text-transform: uppercase;
+    padding: 8px 0;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    background-color: var(--btn-second);
+}
+
+.hotel-actions .selected {
+    background-color: var(--btn-selected);
+}
+
+.hotel-rating {
+    grid-area: rating;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rating {
+    width: 100%;
+    display: inline-flex;
+    gap: 6px;
+}
+
+.star {
+    width: 18px;
+    height: 17px;
+    background-image: url('../images/svg/star.svg'); 
+    background-size: cover;
+}
+
+.rating-text {
+    text-transform: uppercase;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    background-color: var(--elements-2);
 }
 
 .pagination ul {
