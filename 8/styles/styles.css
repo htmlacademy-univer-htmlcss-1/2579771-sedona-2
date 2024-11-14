@@ -161,7 +161,6 @@ h4 {
 }
 
 /* Стили компонент страниц */
-.hotel-card a,
 .pagination a,
 .contact-info a,
 .navigation-list a
@@ -191,26 +190,6 @@ h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-main);
-}
-
-.interested-link:hover {
-    background-color: var(--btn-hover-brown);
-}
-
-.interested-link:focus {
-    outline: none;
-    background-color: var(--btn-hover-brown);
-}
-
-.interested-link:active {
-    color: var(--small-text);
-}
-
-.interested-link:disabled {
-    background-color: var(--btn-disabled);
-    color: var(--small-text);
 }
 
 .interested-link.wish {
@@ -712,27 +691,7 @@ fieldset legend {
     border-radius: 4px;
     width: 191px;
     height: 36px;
-    color: white; 
     border: none;
-    background-color: var(--btn-second);
-}
-
-.filters-submit:hover {
-    background-color: var(--btn-hover-blue);
-}
-
-.filters-submit:focus {
-    outline: none;
-    background-color: var(--btn-hover-blue);
-}
-
-.filters-submit:active {
-    color: var(--small-text);
-}
-
-.filters-submit:disabled {
-    background-color: var(--btn-disabled);
-    color: var(--small-text);
 }
 
 .filters-reset {
@@ -851,26 +810,14 @@ fieldset {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-main);
 }
 
-.info:hover {
-    background-color: var(--btn-hover-brown);
-}
-
-.info:focus {
-    outline: none;
-    background-color: var(--btn-hover-brown);
-}
-
-.info:active {
-    color: var(--small-text);
-}
-
-.info:disabled {
-    background-color: var(--btn-disabled);
-    color: var(--small-text);
+.subscription-submit {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 0 4px 4px 0;
 }
 
 .hotel-actions .favorite {
@@ -884,48 +831,6 @@ fieldset {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-second);
-}
-
-.favorite:hover {
-    background-color: var(--btn-hover-blue);
-}
-
-.favorite:focus {
-    outline: none;
-    background-color: var(--btn-hover-blue);
-}
-
-.favorite:active {
-    color: var(--small-text);
-}
-
-.favorite:disabled {
-    background-color: var(--btn-disabled);
-    color: var(--small-text);
-}
-
-.hotel-actions .selected {
-    background-color: var(--btn-selected);
-}
-
-.hotel-actions .selected:hover {
-    background-color: var(--btn-hover-green);
-}
-
-.hotel-actions .selected:focus {
-    outline: none;
-    background-color: var(--btn-hover-green);
-}
-
-.hotel-actions .selected:active {
-    color: var(--small-text);
-}
-
-.hotel-actions .selected:disabled {
-    background-color: var(--btn-disabled);
-    color: var(--small-text);
 }
 
 .hotel-rating {
@@ -998,20 +903,71 @@ fieldset {
     background-color: #E6E6E6;
 }
 
-.pg-link:hover {
+.brown-behavior{
+    color: white;
+    background-color: var(--btn-main);
+} 
+
+.brown-behavior:hover {
+    background-color: var(--btn-hover-brown);
+}
+
+.brown-behavior:focus {
+    outline: none;
+    background-color: var(--btn-hover-brown);
+}
+
+.brown-behavior:active {
+    color: var(--small-text);
+}
+
+.brown-behavior:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
+.blue-behavior {
+    color: white;
+    background-color: var(--btn-second);
+}
+
+.blue-behavior:hover {
     background-color: var(--btn-hover-blue);
 }
 
-.pg-link:focus {
+.blue-behavior:focus {
     outline: none;
     background-color: var(--btn-hover-blue);
 }
 
-.pg-link:active {
+.blue-behavior:active {
     color: var(--small-text);
 }
 
-.pg-link:disabled {
+.blue-behavior:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
+.green-behavior.selected {
+    color: white;
+    background-color: var(--btn-selected);
+}
+
+.green-behavior.selected:hover {
+    background-color: var(--btn-hover-green);
+}
+
+.green-behavior.selected:focus {
+    outline: none;
+    background-color: var(--btn-hover-green);
+}
+
+.green-behavior.selected:active {
+    color: var(--small-text);
+}
+
+.green-behavior.selected:disabled {
     background-color: var(--btn-disabled);
     color: var(--small-text);
 }
