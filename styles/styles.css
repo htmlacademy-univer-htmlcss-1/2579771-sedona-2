@@ -9,6 +9,11 @@
     --btn-main: #756157;
     --btn-second: #82B3D3;
     --btn-selected: #7DB54F;
+    --btn-disabled: #E5E5E5;
+
+    --btn-hover-brown: #615048; 
+    --btn-hover-blue: #68A2CA;
+    --btn-hover-green: #6C9E42; 
 
     /* Цвет фона */
     --bg-basic-3: #82B3D3;
@@ -20,7 +25,14 @@
     --bg-hover-brown-active: hsla(20, 15%, 40%, 0.3);
 
     /* Формы */
+    --elements-1: #E5E5E5;
     --elements-2: #f2f2f2;
+
+    /* Текст */
+    --icons-text: #7DB54F;
+    --small-text: hsla(0, 0%, 100%, 0.3);
+    --text-default-opacity-60: hsla(0, 0%, 100%, 0.6);
+    --text-default-opacity-10: hsla(0, 0%, 100%, 0.1);
     
 }
 
@@ -72,6 +84,10 @@ p {
 }
 
 button {
+    font-family: inherit;
+}
+
+input {
     font-family: inherit;
 }
 
@@ -150,7 +166,6 @@ h4 {
 }
 
 /* Стили компонент страниц */
-.hotel-card a,
 .pagination a,
 .contact-info a,
 .navigation-list a
@@ -174,13 +189,12 @@ h4 {
 }
 
 .interested-link {
+    text-transform: uppercase;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-main);
 }
 
 .interested-link.wish {
@@ -199,6 +213,40 @@ h4 {
     background-color: var(--bg-basic-3);
     background-size: cover; 
     background-position: center; 
+}
+
+.filters-navigation {
+    padding: 0;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    gap: 10px
+}
+
+.filters-navigation li {
+    display: flex;
+    align-items: center;
+}
+
+.home-navigation {
+    display: flex;
+    align-items: center;
+    background-image: url('../images/svg/home_nav.svg');
+    width: 13px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.separator-navigation{
+    display: block;
+    align-items: center;
+    width: 6px; 
+    height: 10px; 
+    background-image: url('../images/svg/separator_nav.svg'); 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 fieldset {
@@ -302,7 +350,6 @@ fieldset legend {
 }
 
 .header-navigation {
-    height: inherit;
     display: flex;
     gap: 30px;
 }
@@ -341,11 +388,49 @@ fieldset legend {
     background-color: #756257;
 }
 
-.header-actions { 
+.header-actions {
+    height: 64px;
     display: flex;
     align-items: center;
     gap: 20px;
 } 
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-icon img {
+    display: block;
+}
+
+.favorites-icon img {
+    display: block;
+}
+
+.icons a {
+    padding: 22px 12px;
+}
+
+.favorites-icon {
+    position: relative;
+}
+
+.favorites-count {
+    position: absolute;
+    top: 11px; 
+    left: 20px; 
+    background-color: var(--icons-text);
+    color: #fff; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px; 
+    font-weight: normal; 
+}
 
 .welcome {
     position: relative;
@@ -633,7 +718,47 @@ fieldset legend {
 
 .buttons {
     display: flex;
-    flex-direction: column;    
+    justify-content: end;
+    flex-direction: column;
+    gap: 32px;    
+}
+
+.filters-submit {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-radius: 4px;
+    width: 191px;
+    height: 36px;
+    border: none;
+}
+
+.filters-reset {
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 0;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white; 
+    width: 191px;
+    height: 36px;
+    border: none;
+}
+
+.filters-reset:hover {
+    color: var(--text-default-opacity-60);
+}
+
+.filters-reset:focus {
+    outline: 3px solid var(--btn-second);
+}
+
+.filters-reset:active {
+    color: var(--small-text);
+}
+
+.filters-reset:disabled {
+    color: var(--text-default-opacity-10)
 }
 
 .filters-form{
@@ -662,7 +787,27 @@ fieldset {
 
 .view-toggle {
     display: flex;
+    align-items: center;
+    gap: 8px
 }
+
+.view-toggle button{
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    padding: 12px 14px;
+    border: 2px solid var(--elements-2);
+}
+
+.view-toggle .active {
+    border: 2px solid var(--color-main);
+}
+
+.view-toggle svg {
+    display: block;
+}  
 
 .hotels-list {
     padding: 0 70px;
@@ -724,11 +869,39 @@ fieldset {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-main);
+}
+
+.subscription-submit {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.subscription form {
+    display: flex;
+    height: 52px;
+    width: 100%;
+}
+
+.subscription-input {
+    border-radius: 4px 0 0 4px ;
+    background-color: var(--elements-2);
+    width: 100%;
+    padding: 20px 14px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subscription-bg-image .subscription-input {
+    background-color: white;
 }
 
 .hotel-actions .favorite {
+    cursor: pointer;
     text-transform: uppercase;
     padding: 8px 0;
     border: none;
@@ -738,12 +911,6 @@ fieldset {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
-    background-color: var(--btn-second);
-}
-
-.hotel-actions .selected {
-    background-color: var(--btn-selected);
 }
 
 .hotel-rating {
@@ -814,4 +981,73 @@ fieldset {
     height: 1px;
     width: 1060px;
     background-color: #E6E6E6;
+}
+
+.brown-behavior{
+    color: white;
+    background-color: var(--btn-main);
+} 
+
+.brown-behavior:hover {
+    background-color: var(--btn-hover-brown);
+}
+
+.brown-behavior:focus {
+    outline: none;
+    background-color: var(--btn-hover-brown);
+}
+
+.brown-behavior:active {
+    color: var(--small-text);
+}
+
+.brown-behavior:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
+.blue-behavior {
+    color: white;
+    background-color: var(--btn-second);
+}
+
+.blue-behavior:hover {
+    background-color: var(--btn-hover-blue);
+}
+
+.blue-behavior:focus {
+    outline: none;
+    background-color: var(--btn-hover-blue);
+}
+
+.blue-behavior:active {
+    color: var(--small-text);
+}
+
+.blue-behavior:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
+}
+
+.green-behavior.selected {
+    color: white;
+    background-color: var(--btn-selected);
+}
+
+.green-behavior.selected:hover {
+    background-color: var(--btn-hover-green);
+}
+
+.green-behavior.selected:focus {
+    outline: none;
+    background-color: var(--btn-hover-green);
+}
+
+.green-behavior.selected:active {
+    color: var(--small-text);
+}
+
+.green-behavior.selected:disabled {
+    background-color: var(--btn-disabled);
+    color: var(--small-text);
 }

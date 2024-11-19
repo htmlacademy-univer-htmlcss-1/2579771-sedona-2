@@ -32,8 +32,8 @@
                 </a>
                 </div>
                 
-                <a class="interested-link wish text-btn-small" href="catalog.html">
-                    ХОЧУ СЮДА!
+                <a class="brown-behavior interested-link wish text-btn-small" href="catalog.html">
+                    Хочу сюда!
                 </a>
             </div>
         </div>            
@@ -43,8 +43,9 @@
             <h1>Гостиницы Седоны</h1>
             <nav>
                 <ul class="filters-navigation">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li><a href="index.html" class="home-navigation"></a></li>
+                    <li><span class="separator-navigation"></span></li>
+                    <li><a class="text-small" href="#">Гостиницы</a></li>
                 </ul>
             </nav>
             <div class="filters-container">
@@ -72,8 +73,8 @@
                             <input type="number" name="price_max" min="0" max="9000" value="9000">
                         </fieldset>
                         <div class="buttons">
-                            <button type="submit">Применить</button>
-                            <button type="reset">Сбросить</button>
+                            <button class="blue-behavior filters-submit text-btn-small" type="submit">Применить</button>
+                            <button class="filters-reset text-btn-small" type="reset">Сбросить</button>
                         </div>
                     </div>
                 </form>
@@ -91,9 +92,15 @@
                     </select>
         
                     <div class="view-toggle">
-                        <button class="view-toggle-plate">Плитка</button>
-                        <button class="view-toggle-element">По элементам</button>
-                        <button class="view-toggle-list">Список</button>
+                        <button class="view-toggle-plate active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                        </button>
+                        <button class="view-toggle-element">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                        </button>
+                        <button class="view-toggle-list">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -107,8 +114,8 @@
                         <p class="text-blocks">От 4000 ₽</p>
                     </div>
                     <div class="hotel-actions">
-                        <a class="info text-btn-small" href="#">Подробнее</a>
-                        <button class="favorite text-btn-small" >В Избранное</button>
+                        <a class="brown-behavior info text-btn-small" href="#">Подробнее</a>
+                        <button class="blue-behavior favorite text-btn-small" >В Избранное</button>
                     </div>
                     <div class="hotel-rating">
                         <div class="rating">
@@ -129,8 +136,8 @@
                         <p class="text-blocks">От 5000 ₽</p>
                     </div>
                     <div class="hotel-actions">
-                        <a class="info text-btn-small" href="#">Подробнее</a>
-                        <button class="favorite selected text-btn-small" >В Избранном</button>
+                        <a class="brown-behavior info text-btn-small" href="#">Подробнее</a>
+                        <button class="green-behavior selected favorite  text-btn-small" >В Избранном</button>
                     </div>
                     <div class="hotel-rating">
                         <div class="rating">
@@ -151,8 +158,8 @@
                         <p class="text-blocks">От 2500 ₽</p>
                     </div>
                     <div class="hotel-actions">
-                        <a class="info text-btn-small" href="#">Подробнее</a>
-                        <button class="favorite text-btn-small" >В Избранное</button>
+                        <a class="brown-behavior info text-btn-small" href="#">Подробнее</a>
+                        <button class="blue-behavior favorite text-btn-small" >В Избранное</button>
                     </div>
                     <div class="hotel-rating">
                         <div class="rating">
@@ -172,8 +179,8 @@
                         <p class="text-blocks">От 1500 ₽</p>
                     </div>
                     <div class="hotel-actions">
-                        <a class="info text-btn-small" href="#">Подробнее</a>
-                        <button class="favorite text-btn-small" >В Избранное</button>
+                        <a class="brown-behavior info text-btn-small" href="#">Подробнее</a>
+                        <button class="blue-behavior favorite text-btn-small" >В Избранное</button>
                     </div>
                     <div class="hotel-rating">
                         <div class="rating">
@@ -191,11 +198,11 @@
             <h2 class="visually-hidden" >Найденные страницы</h2>
             <ul>
                 <li><a class="text-btn-big current">1</a></li>
-                <li><a class="text-btn-big" href="#">2</a></li>
-                <li><a class="text-btn-big" href="#">3</a></li>
-                <li><a class="text-btn-big" href="#">4</a></li>
+                <li><a class="text-btn-big blue-behavior" href="#">2</a></li>
+                <li><a class="text-btn-big blue-behavior" href="#">3</a></li>
+                <li><a class="text-btn-big blue-behavior" href="#">4</a></li>
                 <li><a class="text-btn-big more" href="#">...</a></li>
-                <li><a class="text-btn-big" href="#">10</a></li>
+                <li><a class="text-btn-big blue-behavior" href="#">10</a></li>
             </ul>
         </section>
 
@@ -206,8 +213,8 @@
             </div>
             
             <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="email" placeholder="Ваш e-mail" required>
-                <button type="submit">Подписаться</button>
+                <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
+                <button class="blue-behavior text-btn-big subscription-submit" type="submit">Подписаться</button>
             </form>
           </section>
     </main>
