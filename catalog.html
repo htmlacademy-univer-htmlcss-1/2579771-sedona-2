@@ -52,25 +52,49 @@
                 <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
                     <div class="left-filters"> 
                         <fieldset>
-                            <legend>Инфраструктура:</legend>
-                            <label><input type="checkbox" name="amenities" value="pool">Бассейн</label>
-                            <label><input type="checkbox" name="amenities" value="parking">Парковка</label>
-                            <label><input type="checkbox" name="amenities" value="wifi">Wi-Fi</label>
+                            <div>
+                                <legend>Инфраструктура:</legend> 
+                            </div> 
+                            <div class="filters-labels">
+                                <label><input class="text-checkbox" type="checkbox" name="amenities" value="pool">Бассейн</label>
+                                <label><input class="text-checkbox" type="checkbox" name="amenities" value="parking">Парковка</label>
+                                <label><input class="text-checkbox" type="checkbox" name="amenities" value="wifi">Wi-Fi</label>
+                            </div>
                         </fieldset>
                 
                         <fieldset>
-                            <legend>Тип Жилья:</legend>
-                            <label><input type="radio" name="type" value="hotel" checked> Гостиница</label>
-                            <label><input type="radio" name="type" value="motel"> Мотель</label>
-                            <label><input type="radio" name="type" value="apartment"> Апартаменты</label>
+                            <div>
+                                <legend>Тип Жилья:</legend>
+                            </div> 
+                            <div class="filters-labels">
+                                <label><input class="text-checkbox" type="radio" name="type" value="hotel" checked> Гостиница</label>
+                                <label><input class="text-checkbox" type="radio" name="type" value="motel"> Мотель</label>
+                                <label><input class="text-checkbox" type="radio" name="type" value="apartment"> Апартаменты</label>
+                            </div>
                         </fieldset> 
                     </div>
                     
                     <div class="right-filters">
                         <fieldset>
-                            <legend>Стоимость, ₽:</legend>
-                            <input type="number" name="price_min" min="0" max="9000" value="0"> – 
-                            <input type="number" name="price_max" min="0" max="9000" value="9000">
+                            <div>
+                                <legend>Стоимость, ₽:</legend>
+                            </div>
+                            <div class="price-filters">
+                                <div class="price-inputs">
+                                    <div class="price-input">
+                                        <input class="price-min text-checkbox" type="number" name="price_min" id="price_min" min="0" max="9000" value="0">
+                                        <span class="label">от</span>
+                                    </div>
+                                    <div class="price-input">
+                                        <input class="price-max text-checkbox" type="number" name="price_max" id="price_max" min="0" max="9000" value="9000">
+                                        <span class="label">до</span>
+                                    </div>
+                                </div>
+                                <div class="range-slider">
+                                    <input type="range" id="range_min" min="0" max="9000" step="1" value="0">
+                                    <input type="range" id="range_max" min="0" max="9000" step="1" value="6750">
+                                </div>  
+                            </div>
                         </fieldset>
                         <div class="buttons">
                             <button class="blue-behavior filters-submit text-btn-small" type="submit">Применить</button>
@@ -86,13 +110,13 @@
                 <h2>Найдено гостиниц: 38</h2>
     
                 <div class="view-options">
-                    <select name="sort_by_price">
+                    <select class="price-sorting text-blocks" name="sort_by_price">
                         <option value="cheap_to_expensive">Сначала дешевые</option>
                         <option value="expensive_to_cheap" >Сначала дорогие</option>
                     </select>
         
                     <div class="view-toggle">
-                        <button class="view-toggle-plate active">
+                        <button class="view-toggle-plate selected">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
                         </button>
                         <button class="view-toggle-element">
