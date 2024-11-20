@@ -1,19 +1,19 @@
 :root {
     /* Цвета текста */
-    --color-main: #000000;       
-    --color-secondary: #333333;   
+    --color-main: #000000;
+    --color-secondary: #333333;
     --color-on-background: #FFF;
-    --color-error: #FF5757;    
-    
+    --color-error: #FF5757;
+
     /* Цвета кнопок */
     --btn-main: #756157;
     --btn-second: #82B3D3;
     --btn-selected: #7DB54F;
     --btn-disabled: #E5E5E5;
 
-    --btn-hover-brown: #615048; 
+    --btn-hover-brown: #615048;
     --btn-hover-blue: #68A2CA;
-    --btn-hover-green: #6C9E42; 
+    --btn-hover-green: #6C9E42;
 
     /* Цвет фона */
     --bg-basic-3: #82B3D3;
@@ -36,7 +36,9 @@
 
     --text-checkbox-opacity-30: #00000030;
     --slider-checkbox-opacity-30: #ffffff30;
-    
+
+    --active: #75615730;
+
 }
 
 @font-face {
@@ -64,7 +66,7 @@ body {
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
-    color: var(--color-main); 
+    color: var(--color-main);
     background-color: white;
     margin: 0 auto;
     display: flex;
@@ -236,10 +238,10 @@ h4 {
 
 .filters {
     color: var(--color-on-background);
-    background-image: url('../images/photos/hotels-backgorund.jpg'); 
+    background-image: url('../images/photos/hotels-backgorund.jpg');
     background-color: var(--bg-basic-3);
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
 }
 
 .filters-navigation {
@@ -247,7 +249,7 @@ h4 {
     margin-top: 8px;
     display: flex;
     align-items: center;
-    list-style: none; 
+    list-style: none;
     gap: 10px
 }
 
@@ -264,20 +266,20 @@ h4 {
     height: 15px;
     background-repeat: no-repeat;
     background-position: center;
-} 
+}
 
 .separator-navigation{
     display: block;
     align-items: center;
-    width: 6px; 
-    height: 10px; 
-    background-image: url('../images/svg/separator_nav.svg'); 
+    width: 6px;
+    height: 10px;
+    background-image: url('../images/svg/separator_nav.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 fieldset {
-    border: none;   
+    border: none;
 }
 
 fieldset legend {
@@ -286,16 +288,16 @@ fieldset legend {
     font-weight: bold;
 }
 
-.filters-navigation a {    
+.filters-navigation a {
     color: var(--color-on-background);
 }
 
 .social-icon {
     display: inline-block;
     width: 40px;
-    height: 40px; 
+    height: 40px;
     background-color: var(--bg-basic-3);
-    background-size: contain; 
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -397,7 +399,7 @@ fieldset legend {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 16px; 
+    padding: 20px 16px;
     text-decoration: none;
 }
 
@@ -410,7 +412,7 @@ fieldset legend {
     position: absolute;
     bottom: -20px;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 2px;
     background-color: #756257;
 }
@@ -420,7 +422,7 @@ fieldset legend {
     display: flex;
     align-items: center;
     gap: 20px;
-} 
+}
 
 .icons {
     display: flex;
@@ -445,18 +447,18 @@ fieldset legend {
 
 .favorites-count {
     position: absolute;
-    top: 11px; 
-    left: 20px; 
+    top: 11px;
+    left: 20px;
     background-color: var(--icons-text);
-    color: #fff; 
-    width: 20px; 
-    height: 20px; 
+    color: #fff;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px; 
-    font-weight: normal; 
+    font-size: 10px;
+    font-weight: normal;
 }
 
 .welcome {
@@ -464,7 +466,7 @@ fieldset legend {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 485px; 
+    height: 485px;
     background-image: url('../images//photos/hero-background.jpg');
     background-color: var(--bg-basic-3);
     background-size: cover;
@@ -473,10 +475,10 @@ fieldset legend {
     overflow: hidden;
     z-index: 1;
 }
-  
+
 .welcome-container {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,13 +500,13 @@ fieldset legend {
 
 .advantages-text h2 {
     max-width: 620px;
-    margin: 0 auto; 
-} 
+    margin: 0 auto;
+}
 
 .advantages-text p {
     max-width: 651px;
     margin: 0 auto;
-} 
+}
 
 .advantages-list {
     display: flex;
@@ -531,7 +533,7 @@ fieldset legend {
 
 .advantage--first .text-container,
 .advantage--last .text-container {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -549,16 +551,16 @@ fieldset legend {
 }
 
 .divider {
-    width: 60px; 
-    height: 2px; 
+    width: 60px;
+    height: 2px;
     background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 .advantage--first img,
 .advantage--last img {
-    flex: 2; 
+    flex: 2;
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 .advantage--first .divider,
@@ -570,7 +572,7 @@ fieldset legend {
 .advantage:nth-child(2),
 .advantage:nth-child(3),
 .advantage:nth-child(4) {
-    flex: 1 1 33.33%; 
+    flex: 1 1 33.33%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -579,7 +581,7 @@ fieldset legend {
 }
 
 .advantage .text-container {
-    flex-grow: 1; 
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -613,7 +615,7 @@ fieldset legend {
 .features-text{
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     text-align: center;
     padding-top: 64px;
     padding-bottom: 64px;
@@ -631,7 +633,7 @@ fieldset legend {
 
 .features-list {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -639,11 +641,11 @@ fieldset legend {
     padding: 80px 85px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: 30px;
-    flex: 1; 
+    flex: 1;
 }
 
 .feature h3,
@@ -681,9 +683,9 @@ fieldset legend {
 }
 
 .subscription-bg-image {
-    background-image: url('../images/photos/subscribe-background.jpg'); 
+    background-image: url('../images/photos/subscribe-background.jpg');
     background-color: var(--bg-basic-3);
-    background-size: cover; 
+    background-size: cover;
 }
 
 .subscription-bg-image > .subscription-text p,
@@ -697,7 +699,7 @@ fieldset legend {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
     text-align: center;
 }
 
@@ -722,7 +724,7 @@ fieldset legend {
 
 .filters  {
     padding: 35px 70px 70px 70px;
-} 
+}
 
 .filters h1 {
     padding: 0;
@@ -769,7 +771,7 @@ fieldset legend {
 
 .price-input input {
     padding-left: 12px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     border: none;
     width: 143px;
     height: 48px;
@@ -782,7 +784,7 @@ fieldset legend {
 
 .price-max {
     font-weight: bold;
-    border-radius: 0 4px 4px 0;  
+    border-radius: 0 4px 4px 0;
 }
 
 .price-input .label {
@@ -878,7 +880,7 @@ fieldset legend {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    gap: 32px;    
+    gap: 32px;
 }
 
 .filters-submit {
@@ -897,7 +899,7 @@ fieldset legend {
     padding: 8px 0;
     border-radius: 4px;
     background-color: transparent;
-    color: white; 
+    color: white;
     width: 191px;
     height: 36px;
     border: none;
@@ -994,7 +996,7 @@ fieldset {
 
 .view-toggle svg {
     display: block;
-}  
+}
 
 .hotels-list {
     padding: 0 70px;
@@ -1117,7 +1119,7 @@ fieldset {
 .star {
     width: 18px;
     height: 17px;
-    background-image: url('../images/svg/star.svg'); 
+    background-image: url('../images/svg/star.svg');
     background-size: cover;
 }
 
@@ -1130,16 +1132,16 @@ fieldset {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white; 
+    color: white;
     background-color: var(--elements-2);
 }
 
 .pagination ul {
     display: flex;
-    list-style: none; 
+    list-style: none;
     padding: 0 70px 60px 70px;
-    margin: 0; 
-    gap: 8px;  
+    margin: 0;
+    gap: 8px;
 }
 
 .pagination a {
@@ -1173,7 +1175,7 @@ fieldset {
 .brown-behavior{
     color: white;
     background-color: var(--btn-main);
-} 
+}
 
 .brown-behavior:hover {
     background-color: var(--btn-hover-brown);
@@ -1252,8 +1254,9 @@ fieldset {
     align-items: center;
     z-index: 1000;
   }
-  
+
   .modal-content {
+    box-sizing: border-box;
     width: 717px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -1261,8 +1264,9 @@ fieldset {
     position: relative;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   }
-  
+
   .modal-close-btn {
+    outline: none;
     position: absolute;
     top: 64px;
     right: 70px;
@@ -1270,31 +1274,38 @@ fieldset {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
   }
+
+  .modal-close-btn:hover circle {
+    fill: #E6E6E6;
+}
+
+.modal-close-btn:focus circle {
+    fill: #E6E6E6;
+    stroke: #83B3D3;
+}
 
   .modal-fields {
     display: flex;
     flex-direction: column;
     gap: 64px;
-  } 
+  }
 
   .modal-fields h2 {
     margin: 0;
-  } 
+  }
 
   .modal-form {
     display: flex;
     flex-direction: column;
     gap: 48px;
-  } 
+  }
 
   .form-group {
     display: flex;
     align-items: center;
   }
-  
+
   .form-group label {
     min-width: 150px;
     font-size: 20px;
@@ -1305,12 +1316,35 @@ fieldset {
   .input-wrapper input {
     height: 48px;
   }
-  
+
   .input-wrapper {
     width: 100%;
     position: relative;
   }
-  
+
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/svg/date.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
   .input-wrapper input[type="date"] {
     width: 100%;
     border: none;
@@ -1322,17 +1356,18 @@ fieldset {
     font-weight: bold;
     padding-left: 20px;
   }
-  
+
   .input-hint {
     position: absolute;
+    padding: 0 20px;
     display: block;
     color: #333333;
   }
-  
+
   .input-hint.error {
     color: #FF5757;
   }
-  
+
   .form-group-inline {
     display: flex;
     justify-content: space-between;
@@ -1344,34 +1379,42 @@ fieldset {
     font-weight: bold;
   }
 
-  .input-group{ 
+  .input-group{
     display: flex;
     align-items: center;
     gap: 46px;
   }
-  
+
   .number-input {
     display: flex;
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 4px;
   }
-  
+
+.number-input input[type="number"]::-webkit-inner-spin-button,
+.number-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
   .number-input input {
-    width: 40px;
     text-align: center;
     border: none;
     background: none;
     font-size: 18px;
-    font-weight: 700;
-    padding: 12px 0;
+    line-height: 20px;
+    max-width: 31px;
+    font-weight: bold;
+    padding: 14px 0;
   }
 
   .label-with-tooltip {
     display: flex;
     gap: 10px
   }
-  
+
   .minus-btn,
   .plus-btn {
     width: 40px;
@@ -1383,22 +1426,26 @@ fieldset {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--active);
   }
-  
+
   .tooltip {
     position: relative;
     display: inline-block;
     margin-left: 10px;
   }
-  
+
   .tooltip-text {
     visibility: hidden;
     width: 256px;
     background-color: #333333;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px 18px 18px 22px;
     position: absolute;
     z-index: 1;
     top: 125%;
@@ -1406,12 +1453,23 @@ fieldset {
     transform: translateX(-50%);
     opacity: 0;
   }
-  
+
   .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
   }
-  
+
+  .tooltip-text::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #333333 transparent; /* Цвет треугольника */
+}
+
   .submit-btn {
     width: 100%;
     padding: 18px;
