@@ -14,30 +14,29 @@
             <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="26.5" cy="26.5" r="26.5" fill="#F2F2F2"/>
                 <path d="M34 21.2923L32.7077 20L27 25.7077L21.2923 20L20 21.2923L25.7077 27L20 32.7077L21.2923 34L27 28.2923L32.7077 34L34 32.7077L28.2923 27L34 21.2923Z" fill="black"/>
-            </svg>                               
+            </svg>
           </button>
           <div class="modal-fields">
             <h2>Поиск гостиницы в Седоне</h2>
             <form class="modal-form">
-                <!-- Дата заезда -->
                 <div class="form-group">
                   <label for="checkin-date">Дата Заезда:</label>
                   <div class="input-wrapper">
                     <input id="checkin-date" value="2021-09-01" type="date" required>
+                    <span class="input-icon"></span>
                     <span class="text-small input-hint error">Мы не можем отправить вас в прошлое.</span>
                   </div>
                 </div>
-                
-                <!-- Дата выезда -->
+
                 <div class="form-group">
                   <label for="checkout-date">Дата Выезда:</label>
                   <div class="input-wrapper">
                     <input id="checkout-date" value="2020-04-27" type="date" required>
+                    <span class="input-icon"></span>
                     <span class="text-small input-hint">На эти даты есть свободные номера. Пока есть.</span>
                   </div>
                 </div>
-                
-                <!-- Количество взрослых и детей -->
+
                 <div class="form-group-inline">
                   <div class="input-group">
                     <label for="adults">Взрослые:</label>
@@ -54,22 +53,21 @@
                             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-                            </svg>    
-                            <span class="tooltip-text">
-                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. 
+                            </svg>
+                            <span class="tooltip-text" role="tooltip">
+                            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                             Дети до 6 лет размещаются бесплатно.
                             </span>
                         </div>
                     </div>
                     <div class="number-input">
                       <button type="button" class="minus-btn">−</button>
-                      <input id="children" type="number" min="0" value="0" required>
+                      <input id="children" type="number" min="0" value="2" required>
                       <button type="button" class="plus-btn">+</button>
                     </div>
                   </div>
                 </div>
-                
-                <!-- Кнопка -->
+
                 <button type="submit" class="blue-behavior submit-btn">Найти</button>
             </form>
           </div>
@@ -82,7 +80,7 @@
           <a class="logo-link" href="index.html">
             <img src="images/svg/logo.svg" width="140" height="70" alt="Логотип Седона">
           </a>
-          
+
           <nav>
             <ul class="navigation-list">
               <li><a href="index.html" class="active"><span>Главная</span></a></li>
@@ -91,7 +89,7 @@
             </ul>
           </nav>
         </div>
-        
+
         <div class="header-actions">
           <div class="icons">
             <a href="#" class="search-icon">
@@ -102,12 +100,12 @@
                 <span class="favorites-count">12</span>
             </a>
           </div>
-            
+
           <a class="brown-behavior interested-link wish text-btn-small" href="catalog.html">
-              Хочу сюда! 
+              Хочу сюда!
           </a>
         </div>
-      </div>            
+      </div>
     </header>
     <main class="main-container">
       <section class="welcome">
@@ -133,7 +131,7 @@
               </div>
               <img src="images/photos/advantage-town.jpg" alt="Картинка города">
           </li>
-      
+
           <li class="advantage">
             <div class="text-container">
               <h3 class="uppercase">Небольшая площадь</h3>
@@ -141,7 +139,7 @@
               <p class="text-blocks">Все достопримечательности находятся очень близко.</p>
             </div>
           </li>
-      
+
           <li class="advantage">
             <div class="text-container">
               <h3 class="uppercase">Красивая дорога</h3>
@@ -149,7 +147,7 @@
               <p class="text-blocks">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
-      
+
           <li class="advantage">
             <div class="text-container">
               <h3 class="uppercase">Мало туристов</h3>
@@ -157,7 +155,7 @@
               <p class="text-blocks">Большинство едет в Гранд-Каньон и толпится там.</p>
             </div>
           </li>
-      
+
           <li class="advantage advantage--last">
               <img src="images/photos/advantage-bridge.jpg" alt="Картинка моста Дьявола">
               <div class="text-container">
@@ -208,7 +206,7 @@
            <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
-        
+
         <form action="https://echo.htmlacademy.ru" method="post">
             <input class="subscription-input" type="email" name="email" placeholder="Ваш e-mail" required>
             <button class="blue-behavior text-btn-big subscription-submit" type="submit">Подписаться</button>
@@ -223,7 +221,7 @@
               <a href="https://t.me/htmlacademy" target="_blank" class="social-icon telegram" aria-label="Telegram"></a>
               <a href="https://www.youtube.com/user/htmlacademyru" target="_blank" class="social-icon youtube" aria-label="YouTube"></a>
           </div>
-    
+
           <div class="contact-info">
               <a class="text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
